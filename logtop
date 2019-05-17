@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+
+#  "gradlew run" won't pass our command line arguments straight through to
+#  our LogTop.main(), so this script is to enable this:
+#
+#    $ blah path/to/log/files
+#
+#  instead of this:
+#
+#    $ blah --args=path/to/log/files
+
+if [ -z "$*" ]; then
+    ./gradlew -q run
+else
+    ./gradlew -q run --args="$*"
+fi

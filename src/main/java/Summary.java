@@ -1,11 +1,10 @@
-//  See LogTop.java
-
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Returned by LogTop.getSummary().  A new one of these is created with every
- * call, so I didn't bother with getters/setters; mess it up however you want.
+ * Returned by LogFileParser.getSummary().  A new one of these is created with
+ * every call, so I didn't bother with getters/setters; mess it up however you
+ * want.
  */
 public class Summary {
     public int uniqueUsers;

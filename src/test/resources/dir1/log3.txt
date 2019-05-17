@@ -1,0 +1,6 @@
+//  User 71f28176, 6 minutes after the end of log2.txt
+10.10.6.90 - - 16/Aug/2016:00:11:31 -0500 "GET /ecf8427e/b443dc7f/71f28176/174ef735/1dd4d421 HTTP/1.0" 200 - "-" "-" 7 "10.10.1.231, 10.10.6.90" -
+
+//  User 489f3e87, exactly 10 minutes after the end of log2.txt (so it should
+//  be the same session)
+10.10.6.90 - - 16/Aug/2016:00:20:20 -0500 "POST /ecf8427e/b443dc7f/489f3e87/72cd2995?85f13c6c HTTP/1.0" 200 - "-" "AHC/1.0i" 8889 "10.10.200.11, 10.10.6.90" -

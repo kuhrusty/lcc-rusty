@@ -1,0 +1,23 @@
+apply plugin: 'java'
+//  We just need this one for "./gradlew run"
+apply plugin: 'application'
+
+repositories {
+    //  not sure whether this is necessary, but we do need to download
+    //  commons-cli as part of the build.
+    jcenter()
+}
+
+dependencies {
+    compile 'commons-cli:commons-cli:1.4'
+    testCompile 'junit:junit:4.12'
+}
+
+run{
+    //  This is so that LogTop -c can get input from System.in when being run
+    //  by "./gradlew run"
+    standardInput = System.in
+}
+
+//  Needed so that "./gradlew run" can find our LogTop.main()
+mainClassName = 'LogTop'
